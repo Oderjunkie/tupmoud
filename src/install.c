@@ -169,6 +169,9 @@ int insone(char *pkg) {
     
     curl_easy_setopt(session, CURLOPT_URL, buf);
     curl_easy_setopt(session, CURLOPT_WRITEFUNCTION, insocb);
+    
+    // yes this is a github api key
+    // no it is not a security vuln.
     list = curl_slist_append(list, "Authorization: Bearer github_pat_11AOBHFJI"
     "0lBtSj4OgzcPB_7d5ZFCmtjbZvvuE2rnzPWVQPnjKfqGMQOBqgsXTLpQnDHTTNKUU3FVGsRJk"
     );
